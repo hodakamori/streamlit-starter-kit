@@ -11,7 +11,8 @@ services:
   nginx:
     image: nginx:alpine
     ports:
-      - "80:80"
+      - "0.0.0.0:80:80" # access from other devices in the same LAN
+      # - "80:80" # access from localhost
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
     depends_on:
