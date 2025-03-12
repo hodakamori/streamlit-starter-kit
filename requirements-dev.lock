@@ -34,6 +34,8 @@ idna==3.10
 jinja2==3.1.5
     # via altair
     # via pydeck
+joblib==1.4.2
+    # via scikit-learn
 jsonschema==4.23.0
     # via altair
 jsonschema-specifications==2024.10.1
@@ -45,6 +47,9 @@ narwhals==1.29.0
 numpy==2.2.3
     # via pandas
     # via pydeck
+    # via rdkit
+    # via scikit-learn
+    # via scipy
     # via streamlit
 packaging==24.2
     # via altair
@@ -52,6 +57,7 @@ packaging==24.2
 pandas==2.2.3
     # via streamlit
 pillow==11.1.0
+    # via rdkit
     # via streamlit
 protobuf==5.29.3
     # via streamlit
@@ -63,6 +69,8 @@ python-dateutil==2.9.0.post0
     # via pandas
 pytz==2025.1
     # via pandas
+rdkit==2024.9.5
+    # via demoapp
 referencing==0.36.2
     # via jsonschema
     # via jsonschema-specifications
@@ -71,14 +79,23 @@ requests==2.32.3
 rpds-py==0.23.1
     # via jsonschema
     # via referencing
+scikit-learn==1.6.1
+    # via demoapp
+scipy==1.15.2
+    # via scikit-learn
 six==1.17.0
     # via python-dateutil
 smmap==5.0.2
     # via gitdb
 streamlit==1.43.0
     # via demoapp
+    # via streamlit-ketcher
+streamlit-ketcher==0.0.1
+    # via demoapp
 tenacity==9.0.0
     # via streamlit
+threadpoolctl==3.5.0
+    # via scikit-learn
 toml==0.10.2
     # via streamlit
 tornado==6.4.2
