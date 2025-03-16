@@ -29,6 +29,8 @@ gitdb==4.0.12
     # via gitpython
 gitpython==3.1.44
     # via streamlit
+greenlet==3.1.1
+    # via sqlalchemy
 idna==3.10
     # via requests
 jinja2==3.1.5
@@ -61,6 +63,8 @@ pillow==11.1.0
     # via streamlit
 protobuf==5.29.3
     # via streamlit
+psycopg2-binary==2.9.10
+    # via demoapp
 pyarrow==19.0.1
     # via streamlit
 pydeck==0.9.1
@@ -87,6 +91,8 @@ six==1.17.0
     # via python-dateutil
 smmap==5.0.2
     # via gitdb
+sqlalchemy==2.0.39
+    # via demoapp
 streamlit==1.43.0
     # via demoapp
     # via streamlit-ketcher
@@ -103,6 +109,7 @@ tornado==6.4.2
 typing-extensions==4.12.2
     # via altair
     # via referencing
+    # via sqlalchemy
     # via streamlit
 tzdata==2025.1
     # via pandas
