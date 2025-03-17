@@ -21,6 +21,8 @@ cachetools==5.5.2
     # via streamlit
 certifi==2025.1.31
     # via requests
+cffi==1.17.1
+    # via rpy2
 charset-normalizer==3.4.1
     # via requests
 click==8.1.8
@@ -34,6 +36,7 @@ idna==3.10
 jinja2==3.1.5
     # via altair
     # via pydeck
+    # via rpy2
 joblib==1.4.2
     # via scikit-learn
 jsonschema==4.23.0
@@ -63,14 +66,19 @@ protobuf==5.29.3
     # via streamlit
 pyarrow==19.0.1
     # via streamlit
+pycparser==2.22
+    # via cffi
 pydeck==0.9.1
     # via streamlit
 python-dateutil==2.9.0.post0
     # via pandas
 pytz==2025.1
     # via pandas
+    # via rpy2
+pytz-deprecation-shim==0.1.0.post0
+    # via tzlocal
 rdkit==2024.9.5
-    # via demoapp
+    # via streamlit-starter-kit
 referencing==0.36.2
     # via jsonschema
     # via jsonschema-specifications
@@ -79,8 +87,10 @@ requests==2.32.3
 rpds-py==0.23.1
     # via jsonschema
     # via referencing
+rpy2==3.5.12
+    # via streamlit-starter-kit
 scikit-learn==1.6.1
-    # via demoapp
+    # via streamlit-starter-kit
 scipy==1.15.2
     # via scikit-learn
 six==1.17.0
@@ -88,10 +98,10 @@ six==1.17.0
 smmap==5.0.2
     # via gitdb
 streamlit==1.43.0
-    # via demoapp
     # via streamlit-ketcher
+    # via streamlit-starter-kit
 streamlit-ketcher==0.0.1
-    # via demoapp
+    # via streamlit-starter-kit
 tenacity==9.0.0
     # via streamlit
 threadpoolctl==3.5.0
@@ -106,6 +116,9 @@ typing-extensions==4.12.2
     # via streamlit
 tzdata==2025.1
     # via pandas
+    # via pytz-deprecation-shim
+tzlocal==4.3.1
+    # via rpy2
 urllib3==2.3.0
     # via requests
 watchdog==6.0.0
