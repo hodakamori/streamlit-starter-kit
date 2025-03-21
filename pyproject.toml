@@ -1,5 +1,5 @@
 [project]
-name = "demoapp"
+name = "streamlit-starter-kit"
 version = "0.1.0"
 description = "Add your description here"
 authors = [
@@ -10,6 +10,7 @@ dependencies = [
     "rdkit>=2024.9.5",
     "scikit-learn>=1.6.1",
     "streamlit-ketcher>=0.0.1",
+    "rpy2==3.5.12",
     "sqlalchemy>=2.0.0",
     "psycopg2-binary>=2.9.9",
 ]
@@ -28,4 +29,4 @@ dev-dependencies = []
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/demoapp"]
+packages = ["src/streamlit_starter_kit"]
