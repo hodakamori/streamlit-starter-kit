@@ -10,6 +10,8 @@ dependencies = [
     "rdkit>=2024.9.5",
     "scikit-learn>=1.6.1",
     "streamlit-ketcher>=0.0.1",
+    "sqlalchemy>=2.0.0",
+    "psycopg2-binary>=2.9.9",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
